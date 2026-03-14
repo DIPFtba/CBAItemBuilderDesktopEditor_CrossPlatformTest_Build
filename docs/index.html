@@ -114,7 +114,7 @@
     fetch('downloads.json')
         .then(r => r.json())
         .then(info => {
-            const base = 'https://github.com/DIPFtba/releases/download/' + info.tag + '/';
+            const base = 'https://github.com/DIPFtba/CBAItemBuilderDesktopEditor_CrossPlatformTest_Build/releases/download/' + info.tag + '/';
             document.getElementById('dl-mac').href = base + 'cba-itembuilder-10.4.0-macosx.cocoa.aarch64.tar.gz';
             document.getElementById('dl-linux').href = base + 'cba-itembuilder-10.4.0-linux.gtk.x86_64.tar.gz';
             document.getElementById('dl-win').href = base + 'cba-itembuilder-10.4.0-win32.win32.x86_64.zip';
@@ -126,7 +126,7 @@
         })
         .catch(() => {
             // Fallback: link to releases page
-            const url = 'https://github.com/DIPFtba/CBAItemBuilderDesktopEditor_CrossPlatformTest_Source/releases/latest';
+            const url = 'https://github.com/DIPFtba/CBAItemBuilderDesktopEditor_CrossPlatformTest_Build/releases/latest';
             document.getElementById('dl-mac').href = url;
             document.getElementById('dl-linux').href = url;
             document.getElementById('dl-win').href = url;
